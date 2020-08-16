@@ -6,14 +6,14 @@ import coil.api.load
 import com.boiler.plate.code.R
 import com.boiler.plate.code.common.CONSTANTS
 import com.boiler.plate.code.data.entities.EmployeeData
-import kotlinx.android.synthetic.main.activity_movie_details.*
+import kotlinx.android.synthetic.main.activity_details.*
 
 class EmployeeDetailsActivity : AppCompatActivity() {
 
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_movie_details)
+            setContentView(R.layout.activity_details)
             val ss:EmployeeData = intent.getParcelableExtra(CONSTANTS.MOVIE_ID)
             ss.profileImage?.let {
                 posterimage.load(it)

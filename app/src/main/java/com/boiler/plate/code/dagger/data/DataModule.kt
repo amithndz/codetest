@@ -22,7 +22,7 @@ class DataModule {
         return Room.databaseBuilder(
                 context,
                 AppDatabase::class.java,
-                "app_db").allowMainThreadQueries().build()
+                "app_db").allowMainThreadQueries().fallbackToDestructiveMigration().build()
     }
 
     @Provides

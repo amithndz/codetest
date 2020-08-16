@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
 import com.boiler.plate.code.R
 import com.boiler.plate.code.data.entities.EmployeeData
-import kotlinx.android.synthetic.main.popular_movies_item_row.view.*
+import kotlinx.android.synthetic.main.employee_item_row.view.*
 
 
 class EmployeeAdapter constructor(private val onEmployeeSelected:
@@ -16,7 +16,7 @@ class EmployeeAdapter constructor(private val onEmployeeSelected:
         RecyclerView.Adapter<EmployeeAdapter.EmployeeCellViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EmployeeCellViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(
-                R.layout.popular_movies_item_row,
+                R.layout.employee_item_row,
                 parent,
                 false)
         return EmployeeCellViewHolder(view)

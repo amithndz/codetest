@@ -14,7 +14,7 @@ import com.boiler.plate.code.R
 import com.boiler.plate.code.base.BaseFragment
 import com.boiler.plate.code.common.CONSTANTS
 import com.boiler.plate.code.presentation.ui.employeeDetails.activity.EmployeeDetailsActivity
-import kotlinx.android.synthetic.main.fragment_movie_list.*
+import kotlinx.android.synthetic.main.fragment_employee_list.*
 import javax.inject.Inject
 
 
@@ -43,7 +43,7 @@ class EmployeeListFragment : BaseFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_movie_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_employee_list, container, false)
         return view
     }
 
